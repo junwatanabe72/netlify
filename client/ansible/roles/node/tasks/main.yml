@@ -1,0 +1,11 @@
+- name: setup nodejs12.x
+  shell: curl -sL https://rpm.nodesource.com/setup_12.x | bash -
+
+- name: installing 12.x version of node.js
+  yum:
+    name: nodejs
+    state: latest
+
+- name: Install packages based on package.json.
+  npm:
+    path: /opt

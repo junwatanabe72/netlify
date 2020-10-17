@@ -1,0 +1,13 @@
+[build]
+  # Directory to change to before starting a build.
+  # This is where we will look for package.json/.nvmrc/etc.
+
+  publish = "build/"
+
+  # Default build command.
+  command = "npm run build"
+
+  [[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
